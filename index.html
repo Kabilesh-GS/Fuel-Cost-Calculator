@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h2 class="title01">Fuel Cost Calculator</h2><br>
+    <div class="tablediv01">
+        <table>
+            <tr>
+                <th></th>
+                <th>Petrol</th>
+                <th>Disel</th>
+                <th>CNG</th>
+            </tr>
+            <tr>
+                <td>Kilometre/Liter <br>(Mileage of vehicle)</td>
+                <td><input type="number" id="MileagePet"></td>
+                <td><input type="number" id="MileageDie"></td>
+                <td><input type="number" id="MileageCng"></td>
+            </tr>
+            <tr>
+                <td>Enter Fuel Cost <br>Per Liter</td>
+                <td><input type="number" id="CostPet" value="97.22"></td>
+                <td><input type="number" id="CostDie" value="90.06"></td>
+                <td><input type="number" id="CostCng" value="73.59"></td>
+            </tr>
+            <tr>
+                <td>Daily Fuel Cost</td>
+                <td><label id="DailyPet"></label></td>
+                <td><label id="DailyDie"></label></td>
+                <td><label id="DailyCng"></label></td>
+            </tr>
+            <tr>
+                <td>Monthly Fuel Cost</td>
+                <td><label id="MonthlyPet"></label></td>
+                <td><label id="MonthlyDie"></label></td>
+                <td><label id="MonthlyCng"></label></td>
+            </tr>
+            <tr>
+                <td>Yearly Fuel Cost</td>
+                <td><label id="yearlyPet"></label></td>
+                <td><label id="yearlyDie"></label></td>
+                <td><label id="yearlyCng"></label></td>
+            </tr>
+        </table><br>
+        <input type="button" id="Calculate" value="Calculate Price">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

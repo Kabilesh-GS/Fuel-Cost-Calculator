@@ -9,54 +9,96 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h2 class="title01">Fuel Cost Calculator</h2><br>
-    <div class="tablediv01">
-        <table>
-            <tr>
-                <th></th>
-                <th>Petrol</th>
-                <th>Disel</th>
-                <th>CNG</th>
-            </tr>
-            <tr>
-                <td>Kilometre/Liter <br>(Mileage of vehicle)</td>
-                <td><input type="number" id="MileagePet"></td>
-                <td><input type="number" id="MileageDie"></td>
-                <td><input type="number" id="MileageCng"></td>
-            </tr>
-            <tr>
-                <td>Enter Fuel Cost <br>Per Liter</td>
-                <td><input type="number" id="CostPet" value="97.22"></td>
-                <td><input type="number" id="CostDie" value="90.06"></td>
-                <td><input type="number" id="CostCng" value="73.59"></td>
-            </tr>
-            <tr>
-                <td>Daily Fuel Cost</td>
-                <td><label id="DailyPet"></label></td>
-                <td><label id="DailyDie"></label></td>
-                <td><label id="DailyCng"></label></td>
-            </tr>
-            <tr>
-                <td>Monthly Fuel Cost</td>
-                <td><label id="MonthlyPet"></label></td>
-                <td><label id="MonthlyDie"></label></td>
-                <td><label id="MonthlyCng"></label></td>
-            </tr>
-            <tr>
-                <td>Yearly Fuel Cost</td>
-                <td><label id="yearlyPet"></label></td>
-                <td><label id="yearlyDie"></label></td>
-                <td><label id="yearlyCng"></label></td>
-            </tr>
-        </table><br>
-        <input type="button" id="Calculate" value="Calculate Price">
+    <h2 class="title01">About Cars!</h2><br>
+    <div class="canvas01">
+        <div class="maindivcontain01">
+            <div class="tableandcontent01">
+                <ion-icon class="icon01" name="car"></ion-icon>
+                <p class="title02"></ion-icon>Fuel Cost Calculator</p>
+                <div class="line01"></div>
+                <p class="des01">In this fuel cost calculator, you can check and compare the monthly running cost. You
+                    can
+                    compare the
+                    daily,
+                    monthly and yearly fuel cost of one petrol, diesel or CNG car with other car of a different fuel
+                    type.
+                    You
+                    only
+                    need to enter the petrol, diesel or CNG cost per unit or per litre and the approximate mileage you
+                    expect
+                    from
+                    the vehicle.</p>
+                <p class="des02">
+                    The latest fuel price will come automatically based on the selected city. You can also change the
+                    city
+                    to get the latest petrol, diesel, and CNG fuel prices for your city. While calculating the daily,
+                    monthly or yearly fuel cost of your car, you can also manually enter higher or lower fuel prices.
+                    This
+                    will help you estimate the running cost of your petrol, diesel or CNG vehicle if the fuel prices go
+                    up
+                    because of inflation or higher crude oil prices.
+                </p>
+                <div class="choises01">
+                    <lable class="distance">Distance</lable>
+                    <input id="kilometer" type="radio" name="distance">
+                    <lable for="kilometer">Kilometer</lable>
+                    <input type="radio" name="distance" id="miles">
+                    <lable for="miles">Miles</lable>
+                </div>
+                <div class="tablediv01">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Petrol</th>
+                            <th>Disel</th>
+                            <th>CNG</th>
+                        </tr>
+                        <tr>
+                            <td>Kilometre/Liter <br>(Mileage of vehicle)</td>
+                            <td><input type="number" id="MileagePet" value="15"></td>
+                            <td><input type="number" id="MileageDie" value="25"></td>
+                            <td><input type="number" id="MileageCng" value="20"></td>
+                        </tr>
+                        <tr>
+                            <td>Enter Fuel Cost <br>Per Liter</td>
+                            <td><input type="number" id="CostPet" value="103.10"></td>
+                            <td><input type="number" id="CostDie" value="94.72"></td>
+                            <td><input type="number" id="CostCng" value="82.62"></td>
+                        </tr>
+                        <tr>
+                            <td>Daily Fuel Cost</td>
+                            <td><label id="DailyPet"></label></td>
+                            <td><label id="DailyDie"></label></td>
+                            <td><label id="DailyCng"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Fuel Cost</td>
+                            <td><label id="MonthlyPet"></label></td>
+                            <td><label id="MonthlyDie"></label></td>
+                            <td><label id="MonthlyCng"></label></td>
+                        </tr>
+                        <tr>
+                            <td>Yearly Fuel Cost</td>
+                            <td><label id="yearlyPet"></label></td>
+                            <td><label id="yearlyDie"></label></td>
+                            <td><label id="yearlyCng"></label></td>
+                        </tr>
+                    </table><br>
+                    <label id="warning"></label>
+                    <input type="button" id="Calculate" value="Calculate Price">
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

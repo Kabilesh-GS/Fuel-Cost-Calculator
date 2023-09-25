@@ -74,6 +74,6 @@ document.getElementById("Calculate").onclick = function () {
     document.getElementById("yearlyCng").innerHTML =
       "₹" + priceyearcng.toFixed(2);
   } else {
-    alert("select one");
+    alert("Select KiloMeter or Miles");
   }
 };

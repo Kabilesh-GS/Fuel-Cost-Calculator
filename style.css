@@ -26,6 +26,7 @@ td {
 
 #Calculate:active {
     background-color: rgb(111, 111, 111);
+    border: solid red;
 }
 
 .tablediv01 {
@@ -44,7 +45,7 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 30px 1px black;
+    box-shadow: 0px 0px 30px 1px rgb(255, 61, 61);
     padding: 35px;
 }
 
@@ -78,4 +79,15 @@ td {
     height: 1px;
     width: auto;
     background-color: rgb(199, 199, 199);
+}
+
+.mod01,
+.mod02,
+.mod03,
+.mod04,
+.mod05,
+.mod06,
+.mod07 {
+    color: red;
+    color: red;
 }

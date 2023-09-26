@@ -41,6 +41,8 @@ document.getElementById("Calculate").onclick = function () {
     document.getElementById("yearlyCng").innerHTML =
       "₹" + priceyearcng.toFixed(2);
   } else if (document.getElementById("miles").checked) {
+    document.getElementById("tabledata01").innerHTML =
+      "Miles/Liter (Mileage of vehicle)";
     let pricedaypet = cp / (mp / 0.609);
     let pricemontpet = (cp / (mp / 0.609)) * 30;
     let priceyearpet = (cp / (mp / 0.609)) * 365;

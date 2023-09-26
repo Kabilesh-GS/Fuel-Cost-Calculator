@@ -89,7 +89,15 @@ td {
 .mod07,
 .mod08,
 .mod09,
-.mod10 {
+.mod10,
+.mod11,
+.mod12,
+.mod13 {
     color: red;
     color: red;
+}
+
+#dddinkm,
+#dddinmil {
+    display: none;
 }

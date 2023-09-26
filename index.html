@@ -51,12 +51,26 @@
                 <div class="choises01">
                     <lable class="distance" style="font-family: 'Ubuntu', sans-serif;"><span
                             class="mod08">D</span>istance</lable>
-                    <input id="kilometer" type="radio" name="distance">
+                    <input id="kilometer" type="radio" name="distance" onclick="displaykm()">
                     <lable for="kilometer" style="font-family: 'Ubuntu', sans-serif;"><span
                             class="mod08">K</span>ilometer</lable>
-                    <input type="radio" name="distance" id="miles">
+                    <input type="radio" name="distance" id="miles" onclick="displaymil()">
                     <lable for="miles" style="font-family: 'Ubuntu', sans-serif;"><span class="mod10">M</span>iles
                     </lable><br>
+                    <div id="dddinkm">
+                        <lable style="font-family: 'Ubuntu', sans-serif;"><span class="mod11">D</span>aily
+                            <span class="mod12">D</span>rive <span class="mod13">D</span>istance in <span
+                                class="mod11">K</span>ilometer
+                        </lable>
+                        <input type="number" id="dailydrivediskm" value=1>
+                    </div>
+                    <div id="dddinmil">
+                        <lable style="font-family: 'Ubuntu', sans-serif;"><span class="mod11">D</span>aily
+                            <span class="mod12">D</span>rive <span class="mod13">D</span>istance in <span
+                                class="mod11">M</span>iles
+                        </lable>
+                        <input type="number" id="dailydrivedismil" value=0.621>
+                    </div>
                 </div>
                 <div class="tablediv01">
                     <table>
@@ -69,14 +83,14 @@
                         <tr>
                             <td id="tabledata01">Kilometre/Liter <br>(Mileage of vehicle)</td>
                             <td><input type="number" id="MileagePet" value="15"></td>
-                            <td><input type="number" id="MileageDie" value="25"></td>
-                            <td><input type="number" id="MileageCng" value="20"></td>
+                            <td><input type="number" id="MileageDie" value="20"></td>
+                            <td><input type="number" id="MileageCng" value="22"></td>
                         </tr>
                         <tr>
                             <td>Enter Fuel Cost <br>Per Liter</td>
-                            <td><input type="number" id="CostPet" value="103.10"></td>
-                            <td><input type="number" id="CostDie" value="94.72"></td>
-                            <td><input type="number" id="CostCng" value="82.62"></td>
+                            <td><input type="number" id="CostPet" value="106.29"></td>
+                            <td><input type="number" id="CostDie" value="94.25"></td>
+                            <td><input type="number" id="CostCng" value="79.00"></td>
                         </tr>
                         <tr>
                             <td>Daily Fuel Cost</td>

@@ -1,3 +1,11 @@
+function displaykm() {
+  document.getElementById("dddinkm").style.display = "block";
+  document.getElementById("dddinmil").style.display = "none";
+}
+function displaymil() {
+  document.getElementById("dddinkm").style.display = "none";
+  document.getElementById("dddinmil").style.display = "block";
+}
 document.getElementById("Calculate").onclick = function () {
   let mp = document.getElementById("MileagePet").value;
   let md = document.getElementById("MileageDie").value;
@@ -7,18 +15,21 @@ document.getElementById("Calculate").onclick = function () {
   let cd = document.getElementById("CostDie").value;
   let cc = document.getElementById("CostCng").value;
 
+  let dddkm = document.getElementById("dailydrivediskm").value;
+  let dddmil = document.getElementById("dailydrivedismil").value;
+
   if (document.getElementById("kilometer").checked) {
-    let pricedaypet = cp / mp;
-    let pricemontpet = (cp / mp) * 30;
-    let priceyearpet = (cp / mp) * 365;
+    let pricedaypet = (cp / mp) * dddkm;
+    let pricemontpet = (cp / mp) * 30 * dddkm;
+    let priceyearpet = (cp / mp) * 365 * dddkm;
 
-    let pricedaydie = cd / md;
-    let pricemontdie = (cd / md) * 30;
-    let priceyeardie = (cd / md) * 365;
+    let pricedaydie = (cd / md) * dddkm;
+    let pricemontdie = (cd / md) * 30 * dddkm;
+    let priceyeardie = (cd / md) * 365 * dddkm;
 
-    let pricedaycng = cc / mc;
-    let pricemontcng = (cc / mc) * 30;
-    let priceyearcng = (cc / mc) * 365;
+    let pricedaycng = (cc / mc) * dddkm;
+    let pricemontcng = (cc / mc) * 30 * dddkm;
+    let priceyearcng = (cc / mc) * 365 * dddkm;
 
     document.getElementById("DailyPet").innerHTML =
       "₹" + pricedaypet.toFixed(2);
@@ -43,17 +54,17 @@ document.getElementById("Calculate").onclick = function () {
   } else if (document.getElementById("miles").checked) {
     document.getElementById("tabledata01").innerHTML =
       "Miles/Liter (Mileage of vehicle)";
-    let pricedaypet = cp / (mp / 0.609);
-    let pricemontpet = (cp / (mp / 0.609)) * 30;
-    let priceyearpet = (cp / (mp / 0.609)) * 365;
+    let pricedaypet = (cp / (mp / 1.621)) * dddmil;
+    let pricemontpet = (cp / (mp / 1.621)) * 30 * dddmil;
+    let priceyearpet = (cp / (mp / 1.621)) * 365 * dddmil;
 
-    let pricedaydie = cd / (md / 0.609);
-    let pricemontdie = (cd / (md / 0.609)) * 30;
-    let priceyeardie = (cd / (md / 0.609)) * 365;
+    let pricedaydie = (cd / (md / 1.621)) * dddmil;
+    let pricemontdie = (cd / (md / 1.621)) * 30 * dddmil;
+    let priceyeardie = (cd / (md / 1.621)) * 365 * dddmil;
 
-    let pricedaycng = cc / (mc / 0.609);
-    let pricemontcng = (cc / (mc / 0.609)) * 30;
-    let priceyearcng = (cc / (mc / 0.609)) * 365;
+    let pricedaycng = (cc / (mc / 1.621)) * dddmil;
+    let pricemontcng = (cc / (mc / 1.621)) * 30 * dddmil;
+    let priceyearcng = (cc / (mc / 1.621)) * 365 * dddmil;
 
     document.getElementById("DailyPet").innerHTML =
       "₹" + pricedaypet.toFixed(2);

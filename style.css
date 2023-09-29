@@ -91,15 +91,18 @@ td {
     font-family: 'Inter', sans-serif;
     display: inline-block;
     margin-bottom: 5px;
+    font-size: 20px;
 }
 
 .des02 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Gabarito', cursive;
+    font-size: 18px;
 }
 
 .des01 {
     margin-top: 10px;
-    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-family: 'Gabarito', cursive;
 }
 
 .line01 {

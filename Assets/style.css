@@ -1,3 +1,8 @@
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
 table {
     border: 1px solid rgb(220, 16, 16);
     width: 800px;
@@ -5,24 +10,24 @@ table {
     align-items: center;
     font-family: 'Ysabeau Office', sans-serif;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgb(220, 16, 16);
 }
 
 .top-left-box {
-    border-radius: 20px 0 0 0;
+    border-radius: 10px 0 0 0;
 }
 
 .bottom-left-box {
-    border-radius: 0 0 0 20px;
+    border-radius: 0 0 0 10px;
 }
 
 .top-right-box {
-    border-radius: 0 20px 0 0;
+    border-radius: 0 10px 0 0;
 }
 
 .bottom-right-box {
-    border-radius: 0 0 20px 0;
+    border-radius: 0 0 10px 0;
 }
 
 th,
@@ -33,7 +38,7 @@ td {
     align-items: center;
     font-family: 'Ysabeau Office', sans-serif;
     margin-top: 20px;
-    background-color: white;
+    background-color: rgb(22, 22, 22);
 }
 
 .title01 {
@@ -45,6 +50,7 @@ td {
 #Calculate {
     background-color: rgb(255, 0, 0);
     border: none;
+    color: aliceblue;
     font-family: 'Tektur', cursive;
     height: 40px;
     width: 120px;
@@ -71,9 +77,10 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 30px 1px rgb(0, 0, 0);
+    box-shadow: 0px 0px 30px 1px rgb(206, 206, 206);
     padding: 35px;
     border-radius: 30px;
+    background-color: rgb(22, 22, 22);
 }
 
 .canvas01 {
